@@ -441,11 +441,23 @@ body {
 
 .imagenes-certificacion {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 200px; /* separación balanceada */
-  margin-top: 20px;
+  gap: 200px;
+  flex-wrap: wrap;
 }
+
+.imagenes-certificacion img:first-child {
+  width: 60%; /* más grande */
+  max-width: 500px;
+  object-fit: contain;
+}
+
+.imagenes-certificacion img:last-child {
+  width: 35%; /* más pequeña */
+  max-width: 300px;
+  object-fit: contain;
+}
+
 
 .imagenes-certificacion img {
   width: 400px; /* tamaño fijo moderado */
@@ -726,3 +738,5 @@ body {
     margin-top: 20px;
   }
 }
+
+
